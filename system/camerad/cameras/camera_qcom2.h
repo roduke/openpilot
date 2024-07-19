@@ -56,6 +56,7 @@ public:
   void camera_map_bufs(MultiCameraState *s);
   void camera_init(MultiCameraState *s, VisionIpcServer *v, cl_device_id device_id, cl_context ctx, VisionStreamType yuv_type, float focal_len);
   void camera_close();
+  void run(PubMaster *pm, const char *pub_name);
 
   int32_t session_handle;
   int32_t sensor_dev_handle;
